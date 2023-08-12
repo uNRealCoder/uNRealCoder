@@ -197,7 +197,7 @@ flex-wrap: nowrap;
 #aboutBox {
   flex-wrap: wrap !important;
 }
-#professionalExpTable_mob{
+#professionalExpTable_Mob{
   display: block;
 }
 #researchExpTable_Mob{
@@ -213,7 +213,7 @@ flex-wrap: nowrap;
 }
 
 @media screen and (min-width: 850px) {
-#professionalExpTable_mob{
+#professionalExpTable_Mob{
   display: none;
 }
 #researchExpTable_Mob{
