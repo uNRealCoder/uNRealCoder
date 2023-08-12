@@ -1,12 +1,16 @@
-body, html {
+body,
+html {
   height: 100%;
   margin: 0;
   font: 400 18px/1.8 "Lato", sans-serif;
   color: #000000;
   scroll-behavior: smooth;
 }
+
 /* Styling for the parallax background images */
-.bgimg-1, .bgimg-2, .bgimg-3 {
+.bgimg-1,
+.bgimg-2,
+.bgimg-3 {
   position: relative;
   opacity: 1;
   background-attachment: fixed;
@@ -29,17 +33,20 @@ body, html {
   0% {
     background-color: black
   }
+
   25% {
     background-color: rgb(0, 0, 0)
   }
+
   75% {
     background-color: rgb(0, 0, 00)
   }
+
   100% {
     background-color: black
   }
 }
-  
+
 
 .bgimg-2 {
   background-size: 10%;
@@ -47,6 +54,7 @@ body, html {
   background-size: contain;
   background-image: linear-gradient(black, rgb(45, 0, 45));
 }
+
 /*apply blur to bgimg-1 but not to section*/
 .bgimg-1::not(.parallax-caption):not(.parallax-section) {
   filter: blur(5px);
@@ -125,121 +133,143 @@ h3 {
   padding: 14px 20px;
   text-decoration: none;
 }
+
 .navbar-link:hover {
   background-color: blue;
   color: #ffffff;
 }
+
 #skillsTable {
   border-collapse: collapse;
   width: 100%;
 }
-#skillsTable tbody td:nth-child(1){
+
+#skillsTable tbody td:nth-child(1) {
   font-weight: bold;
 }
 
-#desktopBkGroundOverlay{
-  /* Height & width depends on how you want to reveal the overlay (see JS below) */   
+#desktopBkGroundOverlay {
+  /* Height & width depends on how you want to reveal the overlay (see JS below) */
   height: 100%;
   width: 100%;
-  position: fixed; /* Stay in place */
-  z-index: 1; /* Sit on top */
+  position: fixed;
+  /* Stay in place */
+  z-index: 1;
+  /* Sit on top */
   left: 0;
   top: 0;
-  background-color: rgb(0,0,0); /* Black fallback color */
-  background-color: rgba(0,0,0, 0.01); /* Black w/opacity */
-  overflow-x: hidden; /* Disable horizontal scroll */
+  background-color: rgb(0, 0, 0);
+  /* Black fallback color */
+  background-color: rgba(0, 0, 0, 0.01);
+  /* Black w/opacity */
+  overflow-x: hidden;
+  /* Disable horizontal scroll */
   transition: 0.5s;
   pointer-events: none;
   font-size: 9px;
   font-weight: bold;
-  color: #00ff00; /* Green color for the text */
-  text-shadow: 0 0 7px rgba(0, 255, 0, 0.6); /* Green glow effect */
-  filter: blur(5px); /* 5px blur effect */
+  color: #00ff00;
+  /* Green color for the text */
+  text-shadow: 0 0 7px rgba(0, 255, 0, 0.6);
+  /* Green glow effect */
+  filter: blur(5px);
+  /* 5px blur effect */
 }
 
 @media screen and (max-width: 800px) {
-tr { 
-  display: flex; 
-  flex-direction: row;
-  flex-wrap: wrap;
-  margin: 0.5em 0;
-  border: 1px solid rgba(3,3,3,0.2);
-}
-td, th {
-  flex: 1 1 150px;
-  border: 0.5px solid rgba(3,3,3,0.2);
-}
-td.edit-buttons, td.empty {
-  /*flex: 1 0 90%;
+  tr {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 0.5em 0;
+    border: 1px solid rgba(3, 3, 3, 0.2);
+  }
+
+  td,
+  th {
+    flex: 1 1 150px;
+    border: 0.5px solid rgba(3, 3, 3, 0.2);
+  }
+
+  td.edit-buttons,
+  td.empty {
+    /*flex: 1 0 90%;
   text-align: center;*/
-}
-thead{
-  display: none;
-}
+  }
+
+  thead {
+    display: none;
+  }
 }
 
 /*Have elements slide up into view*/
 
 @keyframes cool {
-to {
-  opacity: 1;
-}
+  to {
+    opacity: 1;
+  }
 }
 
 #aboutBox {
-width: 100%;
-display:flex;
-flex-wrap: nowrap;
+  width: 100%;
+  display: flex;
+  flex-wrap: nowrap;
 }
 
 /*change flex-wrap to wrap if mobile*/
 @media screen and (max-width: 850px) {
-#aboutBox {
-  flex-wrap: wrap !important;
-}
-#professionalExpTable_Mob{
-  display: block;
-}
-#researchExpTable_Mob{
-  display: block;
-}
+  #aboutBox {
+    flex-wrap: wrap !important;
+  }
 
-#professionalExpTable{
-  display: none;
-}
-#researchExpTable{
-  display: none;
-}
+  #professionalExpTable_Mob {
+    display: block;
+  }
+
+  #researchExpTable_Mob {
+    display: block;
+  }
+
+  #professionalExpTable {
+    display: none;
+  }
+
+  #researchExpTable {
+    display: none;
+  }
 }
 
 @media screen and (min-width: 850px) {
-#professionalExpTable_Mob{
-  display: none;
-}
-#researchExpTable_Mob{
-  display: none;
-}
-#professionalExpTable{
-  display: block;
-}
-#researchExpTable{
-  display: block;
-}
+  #professionalExpTable_Mob {
+    display: none;
+  }
+
+  #researchExpTable_Mob {
+    display: none;
+  }
+
+  #professionalExpTable {
+    display: block;
+  }
+
+  #researchExpTable {
+    display: block;
+  }
 }
 
 /*first td not have bullet points*/
-#researchExpTable_Mob > tbody > tr > td:first-child > ul{
-list-style: none;
+#researchExpTable_Mob>tbody>tr>td:first-child>ul {
+  list-style: none;
 }
 
-#contactContents{
-display: inline-flex;
-flex-wrap: wrap;
-justify-content: left;
-align-items: left;
-text-align: left;
+#contactContents {
+  display: inline-flex;
+  flex-wrap: wrap;
+  justify-content: left;
+  align-items: left;
+  text-align: left;
 }
 
-#contactContents > *{
-padding: 10px;
+#contactContents>* {
+  padding: 10px;
 }
