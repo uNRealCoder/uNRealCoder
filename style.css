@@ -191,11 +191,10 @@ h3 {
     border: 0.5px solid rgba(3, 3, 3, 0.2);
   }
 
-  td.edit-buttons,
+  /* td.edit-buttons,
   td.empty {
     /*flex: 1 0 90%;
-  text-align: center;*/
-  }
+  text-align: center;}*/
 
   thead {
     display: none;
