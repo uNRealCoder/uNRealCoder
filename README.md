@@ -26,7 +26,6 @@ class NikhilRanjan(Inference):
 | --- | --- |
 | [**downshift-server**](https://github.com/uNRealCoder/downshift-server) | A CPU-first model server that checks its own work. It exports your model to ONNX, compares the result with PyTorch, and serves eager PyTorch if the numbers are wrong. [Docs](https://downshift-server.readthedocs.io/en/latest/index.html) |
 | [**PyG_Transformer_Temporal_Sampling**](https://github.com/uNRealCoder/PyG_Transformer_Temporal_Sampling) | Anti-money-laundering detection with graph neural networks in PyTorch Geometric, compared against an XGBoost baseline. [Results](https://uNRealCoder.github.io/PyG_Transformer_Temporal_Sampling/) |
-| [**AutoTensorDevice**](https://github.com/uNRealCoder/AutoTensorDevice) | A small PyTorch routing layer that picks the device for each tensor computation. Not a data structure. Not a framework. |
 
 #### Tools I reach for
 
